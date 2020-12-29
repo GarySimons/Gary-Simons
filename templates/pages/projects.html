@@ -1,0 +1,133 @@
+{% extends "layout/base.html" %}
+{% block content %}
+
+<div class="main">
+	<div class="row justify-content-center">
+		<h3 class="col-sm-8 sectionhead">projects.</h3>
+	</div>
+	<div class="row justify-content-center">
+		<div class="col-sm-8 col-lg-4" id="projectpanel1">
+			<img src="static/images/wildbunch.png" alt="Wild Bunch Florist" class="img-fluid laptop" data-toggle="modal" data-target="#modal1">
+			<p class="projectname">wildbunch florist</p>
+			<a class="view" aria-label="View website" data-toggle="modal" data-target="#modal1">
+				<p class="view">view</p>
+				<span class="sr-only">view</span>
+			</a>
+		</div>
+
+		<div class="col-sm-8 col-lg-4" id="projectpanel2">
+			<img src="static/images/handpicked.png" alt="Handpicked Brighton" class="img-fluid laptop" data-toggle="modal" data-target="#modal2">
+			<p class="projectname">handpicked brighton</p>
+			<a class="view" aria-label="View website" data-toggle="modal" data-target="#modal2">
+				<p class="view">view</p>
+				<span class="sr-only">view</span>
+			</a>
+		</div>
+	</div>
+
+	<div class="row justify-content-center">
+		<div class="col-sm-8 col-lg-4" id="projectpanel3">
+			<img src="static/images/girlsrun.png" alt="Girls On The Run" class="img-fluid laptop" data-toggle="modal" data-target="#modal3">
+			<p class="projectname">girls on the run</p>
+			<a class="view" aria-label="View website" data-toggle="modal" data-target="#modal3">
+				<p class="view">view</p>
+				<span class="sr-only">view</span>
+			</a>
+		</div>
+
+	</div>
+
+	<!-- Bird -->
+	{% include 'components/bird.html' %}
+</div>
+
+<!-- Footer -->
+{% include 'components/footer.html' %}
+
+<!-- Wildbunch modal1 -->
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="Project" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+		<div class="modal-content col-md-12 ml-auto justify-content-center" id="modalbackground1">
+			<a class="shut" data-dismiss="modal">X</a>
+			<div>
+				<img src="static/images/wildproject.png" alt="Wild Bunch Project" class="img-fluid laptop" data-toggle="modal" data-target="">
+        </div>
+				<div>
+					<h5 class="modaltitle">wildbunch florist</h5>
+					<p class="modalbody">Wild Bunch is a high-end florist based in Soho, central London. I
+						wanted to create a strong visual brand for them using beautiful imagery and an upmarket feel. I
+						website uses beautiful images of flowers and clean design to reflect the brand's values. I used
+						a hand written logo font to show the brand's wild and care-free attitude, which I feel would
+						resonate with it's customers who want that little bit of wildness in the middle of the city.
+					</p>
+					<p class="projectprogram">HTML CSS</p>
+				</div>
+				<div>
+					<a class="weblink" href="https://garysimons.github.io/WildBunch-Florist/#" target="_blank"
+						aria-label="Weblink" rel="noopener">
+						<p>visit website</p>
+					</a>
+				</div>
+				<a class="shut" data-dismiss="modal">close</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Handpicked Brighton modal2 -->
+	<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="Project" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+			<div class="modal-content col-md-12 ml-auto justify-content-center" id="modalbackground2">
+				<a class="shut" data-dismiss="modal">X</a>
+				<div>
+					<img src="static/images/handpickedproject.png" alt="Handpicked Brighton Project" class="img-fluid laptop" data-toggle="modal" data-target="">
+                </div>
+					<div>
+						<h5 class="modaltitle">handpicked brighton</h5>
+						<p class="modalbody">This is a visitors guide to the best place to eat, drink and stay in
+							Brighton. It provides the user with a selection of the best that the city has to offer for
+							their time there. I wanted to highlight a 'locals' view of what's great and what they would
+							tell visitors to do and experience it as a local would.</p>
+						<p class="projectprogram">html css javascript jquery googlemapsAPI</p>
+					</div>
+					<div>
+						<a class="weblink" href="https://garysimons.github.io/Handpicked-Brighton/#" target="_blank"
+							aria-label="Weblink" rel="noopener">
+							<p>visit website</p>
+						</a>
+					</div>
+					<a class="shut" data-dismiss="modal">close</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Girls On The Run modal3 -->
+		<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="Project" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+				<div class="modal-content col-md-12 ml-auto justify-content-center" id="modalbackground3">
+					<a class="shut" data-dismiss="modal">X</a>
+					<div>
+						<img src="static/images/girlsrunproject.png" alt="Girls On The Run Project" class="img-fluid laptop" data-toggle="modal" data-target="">
+                    </div>
+						<div>
+							<h5 class="modaltitle">girls on the run</h5>
+							<p class="modalbody">This is a website for a fictitious Sussex based women only running club. 
+                                I wanted to create a website to promote running to women. I feel that there are many barriers 
+                                that stop women and girls from taking up exercise. I wanted to do something positive that would 
+                                empower women and give them confidence to give it a go.<br />
+                                The website has been built using HTML, CSS, JavaScript, Python and Django. It uses SQL databases 
+                                to store database information during development, and Amazon Web Services (AWS) for databases 
+                                in production. Also Stripe to handle payments.<br />
+                            </p>
+								<p class="projectprogram">html css javascript python django stripe mysql</p>
+						</div>
+						<div>
+							<a class="weblink" href="https://girls-on-the-run.herokuapp.com/" target="_blank" aria-label="Weblink" rel="noopener">
+								<p>visit website</p>
+							</a>
+						</div>
+						<a class="shut" data-dismiss="modal">close</a>
+					</div>
+				</div>
+			</div>
+
+				{% endblock content %}

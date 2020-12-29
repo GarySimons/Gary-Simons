@@ -1,0 +1,667 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    height: 100vh;
+}
+
+/* Navbar */
+
+#navbarNavDropdown {
+    font-size: 1rem;
+}
+
+#navigationbar {
+    position: sticky;
+    width: 99vw;
+    top: 0;
+    left: 0;
+    padding-right: 1rem;
+    z-index: 2;
+    background-color: #a6a6a6 !important;
+    letter-spacing: 0.1rem;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    color: #fff !important;
+    letter-spacing: 0.6rem;
+}
+
+.nav-link {
+    font-size: .9rem;
+    color: #4d4d4d !important;
+    text-align: right !important;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+    transition: .1s ease-in-out;
+}
+
+/* Home page */
+
+#home {
+    background-color: #a6a6a6;
+    height: 92.5vh;
+    width: 99vw;
+    position: relative;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+#name {
+    color: #fff;
+    font-size: 2.7rem;
+    text-align: center;
+    letter-spacing: 1.5rem;
+}
+
+#strapline {
+    color:#fff;
+    font-size: 1.3rem;
+    text-align: center;
+    letter-spacing: .3rem;
+}
+
+#birdmain {
+    width: 250px;
+    height: 100%;
+    text-align: center;
+}
+
+#aboutme {
+    color: #fff;
+    font-size: .8rem;
+    text-align: center;
+    letter-spacing: .3rem;
+    padding-top: 6rem;  
+}
+
+#aboutme:hover{
+    text-decoration: none !important;
+    color: #4d4d4d !important;
+    transition: .1s ease-in-out;
+}
+
+/* General */
+
+.birdsmall {
+    width: 150px;
+    height: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.sectionhead {
+    color: #000;
+    font-size: 3rem;
+    line-height: 3.6rem;
+    letter-spacing: 0.3rem; 
+    padding-top: 6rem;
+    margin-bottom: -.8rem;
+    margin-top: -1rem;
+    z-index: 1;
+}
+
+.whitetext {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    letter-spacing: 0.1rem; 
+    font-weight: 300;
+}
+
+.blacktext {
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    letter-spacing: 0.1rem; 
+    font-weight: 300;
+}
+
+.sociallinkcv {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-left: 0.15rem;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+}
+
+.sociallinkcv:hover{
+    text-decoration: none !important;
+    color: #4d4d4d!important;
+    transition: .1s ease-in-out;
+}
+
+.sociallinks li a i {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    line-height: .25rem;
+    text-align: center;
+}
+
+.sociallinks li a i:hover {
+    color: #4d4d4d;
+    transition: .1s ease-in-out;
+    text-decoration: none !important;
+}
+
+/* About page */
+
+.aboutpanel {
+    background-color: #4d4d4d;
+    padding: 2rem 2rem 8rem;
+}
+
+#skillspanel {
+    background-color: #a34966;
+    padding: 2rem 2rem 8rem;
+}
+
+#educationpanel {
+    background-color: #d996a9;
+    padding: 2rem 2rem 8rem;
+}
+
+#aboutsocial {
+    background-color: #a6a6a6;
+    padding: 1rem;
+    text-align: center !important;
+}
+
+.listtext {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    letter-spacing: 0.1rem; 
+    font-weight: 300;
+}
+
+.listtextblack {
+    color:#000;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    letter-spacing: 0.1rem; 
+    font-weight: 300;
+}
+
+.progress-bar {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #fff;
+    background-color: #d996a9;
+}
+
+.progress {
+    height: 1rem;
+    background-color: #a34966;
+}
+
+/* Projects page */
+
+#projectpanel1 {
+    background-color: #a34966;
+    padding: 1rem;
+}
+
+#projectpanel2 {
+    background-color: #3c5682;
+    padding: 1rem;
+}
+
+#projectpanel3 {
+    background-color: #5c9990;
+    padding: 1rem;
+}
+
+#projectpanel4 {
+    background-color: #d996a9;
+    padding: 1rem;
+}
+
+.projectname {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1rem;
+    letter-spacing: 0.1rem; 
+    font-weight: 500;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+.projecttext {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    letter-spacing: 0.1rem; 
+    font-weight: 300;
+    text-align: center;
+}
+
+.projectprogram {
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 1rem;
+    font-weight: 300;
+    text-align: center;
+    word-spacing: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.laptop {
+    width: 100%;
+}
+
+.view {
+    color: #fff;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.view:hover{
+    color: #000 !important;
+    transition: .1s ease-in-out;
+}
+
+/* Project modals */
+
+#modalbackground1 {
+    background-color: #a34966;
+}
+
+#modalbackground2 {
+    background-color: #3c5682;
+}
+
+#modalbackground3 {
+    background-color: #5c9990;
+}
+
+#modalbackground4 {
+    background-color: #d996a9;
+}
+
+.modaltitle {
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.1rem; 
+    font-weight: 500;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.modalbody {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    letter-spacing: 0.1rem; 
+    font-weight: 300;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.shut {
+    color: #fff !important;
+    font-size: 0.8rem !important;
+    letter-spacing: 0.1rem !important; 
+    font-weight: 300 !important;
+    text-align: center !important;
+    padding: 1rem !important;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+.shut:hover{
+    color:#000!important;
+    transition: .1s ease-in-out;
+}
+
+.weblink {
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 0.8rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.weblink:hover{
+    color: #000 !important;
+    transition: .1s ease-in-out;
+}
+
+/* Contact page */
+
+#contactbox {
+    background-color: #5c9990;
+    padding: 2rem 2rem 3rem;
+}
+
+#contacttext {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    letter-spacing: 0.1rem; 
+    font-weight: 300;
+}
+
+#btnsend {
+    height: 1.3rem;
+    width: 4rem;
+    font-size: 0.85rem;
+    background-color: #bacfb2;
+    border: #bacfb2;
+    color: #000;
+    font-weight: 300;
+    text-align: center !important;
+    text-decoration: none !important;
+}
+
+#btnsend:hover {
+    text-decoration: none !important;
+    background-color: #fff;
+    color: #000 !important;
+    transition: .1s ease-in-out;
+}
+
+#btnadmin {
+    width: 100%;
+    background-color: #ebd581;
+    color: #fff; 
+    border-color: #fff;
+    text-align: left;
+}
+
+/* Admin page */
+
+.adminbox {
+    background-color: #688499;
+    padding: 2rem 3rem 4rem;
+    text-align: center;
+}
+
+.adminaddbox {
+    background-color: #d996a9;
+    padding: 2rem 2rem 4rem;
+    text-align: center;
+}
+
+.admineditbox {
+    background-color: #bacfb2;
+    padding: 2rem 2rem 4rem;
+    text-align: center;
+}
+
+.admintext {
+    color: #fff;
+    text-underline-position: 1rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    letter-spacing: 0.1rem; 
+    font-weight: 300;
+}
+
+.adminsubhead {
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1.3rem;
+    font-weight: 300; 
+    letter-spacing: 0.1rem; 
+    text-decoration: none;
+    padding-bottom: 1rem;
+}
+
+.adminlisttext {
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    font-weight: 300; 
+    letter-spacing: 0.1rem; 
+    text-decoration: none;
+}
+
+.list {
+    color: #fff;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    font-weight: 300; 
+    letter-spacing: 0.1rem; 
+    text-decoration: none;
+}
+
+.btnaddskill {
+    height: 1.3rem;
+    width: 9.2rem;
+    font-size: 0.85rem;
+    background-color: #d996a9;
+    color: #000;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 1rem;
+    text-decoration: none !important;
+}
+
+.btnaddskill:hover {
+    text-decoration: none !important;
+    background-color: #a34966;
+    color: #fff !important;
+    transition: .1s ease-in-out;
+}
+
+.btneditskill {
+    height: 1.3rem;
+    width: 4rem;
+    font-size: 0.85rem;
+    background-color: #bacfb2;
+    color: #000;
+    font-weight: 300;
+    text-align: center !important;
+    margin-right: 1rem;
+    text-decoration: none !important;
+}
+
+.btneditskill:hover {
+    text-decoration: none !important;
+    background-color: #5c9990;
+    color: #fff !important;
+    transition: .1s ease-in-out;
+}
+
+#btndeleteskill {
+    height: 1.3rem;
+    width: 4rem;
+    font-size: 0.85rem;
+    background-color: #a34966;
+    color: #fff;
+    font-weight: 300;
+    text-align: center !important;
+    text-decoration: none !important;
+}
+
+#btndeleteskill:hover {
+    text-decoration: none !important;
+    background-color: #d996a9;
+    color: #000 !important;
+    transition: .1s ease-in-out;
+}
+
+.btnwhiteedit {
+    height: 1.3rem;
+    width: 9.2rem;
+    font-size: 0.85rem;
+    background-color: #fff;
+    color: #000;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 1rem;
+    text-decoration: none !important;
+}
+
+.btnwhiteedit:hover {
+    text-decoration: none !important;
+    color: #fff;
+    background-color: #5c9990 !important;
+    transition: .1s ease-in-out;
+}
+
+#btnwhiteno {
+    height: 1.3rem;
+    width: 9.2rem;
+    font-size: 0.85rem;
+    background-color: #fff;
+    color: #000;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-decoration: none !important;
+}
+
+#btnwhiteno:hover {
+    text-decoration: none !important;
+    color: #fff;
+    background-color: #d996a9 !important;
+    transition: .1s ease-in-out;
+}
+
+.btnblackedit {
+    height: 1.3rem;
+    width: 9.2rem;
+    font-size: 0.85rem;
+    background-color: #000;
+    border: #000;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 1rem;
+    text-decoration: none !important;
+}
+
+.btnblackedit:hover {
+    text-decoration: none !important;
+    color: #fff;
+    background-color: #5c9990 !important;
+    transition: .1s ease-in-out;
+}
+
+#btnwhiteyes {
+    height: 1.3rem;
+    width: 9.2rem;
+    font-size: 0.85rem;
+    background-color: #000;
+    border: #000;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 1rem;
+    text-decoration: none !important;
+}
+
+#btnwhiteyes:hover {
+    text-decoration: none !important;
+    color: #fff;
+    background-color: #d996a9 !important;
+    transition: .1s ease-in-out;
+}
+
+.btnwhiteadd {
+    height: 1.3rem;
+    width: 9.2rem;
+    font-size: 0.85rem;
+    background-color: #fff;
+    color: #000;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 1rem;
+    text-decoration: none !important;
+}
+
+.btnwhiteadd:hover {
+    text-decoration: none !important;
+    color: #fff;
+    background-color: #a34966 !important;
+    transition: .1s ease-in-out;
+}
+
+.btnblackadd {
+    height: 1.3rem;
+    width: 9.2rem;
+    font-size: 0.85rem;
+    background-color: #000;
+    border: #000;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 1rem;
+    text-decoration: none !important;
+}
+
+.btnblackadd:hover {
+    text-decoration: none !important;
+    color: #fff;
+    background-color: #a34966 !important;
+    transition: .1s ease-in-out;
+}
+
+#modaldelete {
+    background-color: #a34966;  
+}
+
+#modaldeletetitle {
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+    letter-spacing: 0.1rem; 
+    font-weight: 500;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+/* Footer */
+
+.main {
+    min-height: 82vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #a6a6a6;
+    position: relative;
+    padding-top: 1.6rem;
+    margin-top: auto;
+    text-align: center !important;
+}
+
+#copyright {
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem; 
+    text-align: center;
+    margin-top: -1rem;
+}
+

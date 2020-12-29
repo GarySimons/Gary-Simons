@@ -1,0 +1,38 @@
+{% extends "layout/base.html" %}
+{% block content %}
+
+<div class="main">
+	<div class="row justify-content-center">
+		<h3 class="col-sm-8 sectionhead">admin.</h3>
+	</div>
+	<!-- Add skill form -->
+	<div class="container-fluid col-sm-12 col-md-8 adminaddbox">
+		<div>
+			<p class="adminsubhead">add skill</p>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-10">
+				<form action="{{ url_for('insertskill') }}" method="POST">
+					<div class="form-group">
+						<input type="text" class="form-control" id="skill" name="skill" placeholder="Enter skill - ie HTML"><br>
+						<input type="text" class="form-control" id="level" name="level" placeholder="Enter level number - ie 80">
+                        </div>
+						<div>
+							<button type="submit" class="btnblackadd">add skill</button>
+						</div>
+						<div>
+							<a type="button" href="{{url_for('admin')}}" class="btnwhiteadd">back to skills</a>
+						</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bird -->
+	{% include 'components/bird.html' %}
+</div>
+
+<!-- Footer -->
+{% include 'components/footer.html' %}
+
+{% endblock content %}

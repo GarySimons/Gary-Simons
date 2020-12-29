@@ -1,0 +1,59 @@
+{% extends "layout/base.html" %}
+{% block content %}
+
+<div class="main">
+	<div class="row justify-content-center">
+		<h3 class="col-sm-8 sectionhead">about.</h3>
+	</div>
+	<!-- About -->
+	<div class="row justify-content-center">
+		<div class="col-sm-8 col-lg-4 aboutpanel">
+			<p class="whitetext">I am creative, enthusiastic full-stack web developer,
+				who is passionate about great design and building dynamic, responsive and
+				intuitive websites using the latest programs and languages
+				<br>
+				<br>
+            Experienced in front-end and back-end development.
+            Able to jump from one part of the application to another
+				<br>
+				<br>
+            With a solid background in graphic design, I understand how to
+            signpost and guide users on a journey through a site </p>
+		</div>
+		<div class="col-sm-4 col-md-8 d-none d-lg-block col-lg-4 aboutpanel"></div>
+	</div>
+	<!-- Skills display from MongoDB database -->
+	<div class="row justify-content-center">
+		<div class="col-sm-8 col-lg-4" id="skillspanel">
+			{% for skills in skills %}
+			<div class="row">
+				<div class="listtext col-6 col-lg-5">{{skills.skill}}</div><br>
+				<div class="progress col-6 col-lg-7">
+					<div class="progress-bar" role="progressbar" style="width: {{skills.level}}%;"
+						aria-valuenow="{{skills.level}}" aria-valuemin="0" aria-valuemax="100">{{skills.level}}%
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+		<!-- Education -->
+		<div class="col-sm-8 col-lg-4" id="educationpanel">
+			<p class="listtextblack">Full-Stack Web Development</p>
+			<p class="listtext">Code Institute - First Class Honours</p>
+			<br>
+			<p class="listtextblack">HND Graphic Design</p>
+            <p class="listtext">Lincolnshire College of Art and Design</p>
+            <br>
+			<p class="listtextblack">OND Graphic Design</p>
+			<p class="listtext">Ware College, Hertfordshire</p>
+		</div>
+	</div>
+
+	<!-- Bird -->
+	{% include 'components/bird.html' %}
+</div>
+
+<!-- Footer -->
+{% include 'components/footer.html' %}
+
+{% endblock content %}

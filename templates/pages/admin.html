@@ -1,0 +1,59 @@
+{% extends "layout/base.html" %}
+{% block content %}
+
+<div class="main">
+	<div class="row justify-content-center">
+		<h3 class="col-sm-8 sectionhead">admin.</h3>
+	</div>
+	<div class="row justify-content-center">
+		<div class="col-sm-8 adminbox">
+			<!-- Skills display from MongoDB database -->
+			<div class="row">
+				{% for skills in skills %}
+				<div class="col-sm-8 col-md-5">
+					<a type="button" href="{{url_for('editskill', skill_id=skills._id)}}" class="btneditskill">edit</a>
+					<a type="button" data-toggle="modal" data-target="#deletemodal-{{skills._id}}"
+						id="btndeleteskill">delete</a>
+				</div>
+				<div class="col-sm-8 col-md-7">
+					<p class="adminlisttext">skill: {{skills.skill}} - level: {{skills.level}}%</p>
+				</div>
+
+				<!-- Delete modal -->
+				<div class="modal fade" id="deletemodal-{{skills._id}}" tabindex="-1" role="dialog"
+					aria-labelledby="Project" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered modal" role="document">
+						<div class="modal-content col-md-12 ml-auto justify-content-center" id="modaldelete">
+							<a class="shut" data-dismiss="modal">X</a>
+							<div>
+								<h5 id="modaldeletetitle">are you sure you want to delete this skill?</h5>
+								<p class="modalbody">once you press this button <br>it's gone for good!</p>
+							</div>
+							<div class="row justify-content-center">
+								<a type="button" href="{{url_for('deleteskill', skill_id=skills._id)}}"
+									id="btnwhiteyes">yes. i'm sure</a>
+							</div>
+							<div class="row justify-content-center">
+								<a type="button" href="{{url_for('admin')}}" id="btnwhiteno">no. keep it</a>
+							</div>
+							<a class="shut" data-dismiss="modal">close</a>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+
+				<div class="col-12 justify-content-center">
+					<a type="button" href="{{ url_for('addskill') }}" class="btnaddskill"> add new skill</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bird -->
+	{% include 'components/bird.html' %}
+</div>
+
+<!-- Footer -->
+{% include 'components/footer.html' %}
+
+{% endblock content %}
