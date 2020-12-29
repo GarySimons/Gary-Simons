@@ -9,17 +9,10 @@
 
 ## Overview
 
-### Please note that the interface for creating, updating and deleting data is on the 'hidden' admin page. To access this page please enter *'/admin'* at the end of the url.
-
 
 This is a website to **promote me as a full stack web developer**. In the future, I shall be able to use it to send to potential employers as a way of **advertising my skills.** It has been built using **template inheritance** which will make it easier to add content as my projects and skills grow. 
 
-
 The aim of the project is to produce a website using **Flask** and **Python** that allows the use of data stored in a database on **MongoDB**. The website has to demonstrate the data storage principles that you should be able to **create, read, update and delete (CRUD)** that data through a user interface. For my project, the **user** of that interface will be **me** as the website's owner. 
-
-
-**I have 'hidden' an admin section**, which can be accessed by **entering **'/admin'** at the end of the url.** This takes you to the **admin page**, from which you can read, add, update or delete the data. The data is **displayed to the user** in a panel on the **about page**, using easy to digest **text and progress bars to show skills and skill levels attained**. This text and the progress bars are **linked to the MongoDB database** and change when it is edited.
-
 
 The site is hosted on **Heroku** as part of the project requirements.
 
@@ -125,18 +118,6 @@ The projects page highlights some of the **work I have been doing.** Each projec
 ### Contact
 The contact page simply holds a **form for users to fill in and contact me.** I kept the wording on the page very **inviting and conversational** to help the user feel more at ease and give a **friendly vibe.** 
 
-### Admin (Accessed by adding *'/admin'* to the url)
-The admin page is the **interface with the MongoDB database.** It shows a panel showing the **stored data.** Beside each of the listings are two buttons, **edit** and **delete.** Below is a **add new skill** button. 
-
-#### Edit
-The **edit button** opens a new page where it shows the data that you've clicked on in a form that allows for them to be edited. Below are a **save changes button** with sends the updated data to **MongoDB**, and a **back to skills button** which takes you back to the list of skills on the **admin page.**
-
-#### Add
-The **add skills button** opens a page with a form that needs to be filled in with a new skill and new proficiency level. The form has place-holder text to prompt the correct way to input the data. There is a **add skill button** which adds that skill and level to the **MongoDB database**. Again there is a **back to skills button** which takes you back to the list of skills on the **admin** page. 
-
-#### Delete
-The **delete button** on the page is actually a button that opens a **modal** that acts as a safety net to stop skills being deleted by accident. The message on the modal asks the question **'are you sure you want to delete this skill? once you press this button it's gone for good!'** There are then two buttons **'yes. i'm sure'** which is actually the **'real'** delete button that is wired up to remove the data. The other button **'no. keep it'** takes the user safely back to the **admin** page with no harm done. All the buttons on the website share common styles with two different widths. All the changes made in these panels are reflected in the information on the **about page.**
-
 ### Favicon
 The website has a **Favicon** to visually show the user where the site is in their open tabs. It uses the **GS** logo from the navigation bar on the same grey background to tie it together.
 
@@ -227,39 +208,6 @@ The website has a **Favicon** to visually show the user where the site is in the
 * In the footer click on **CV** to check it opens the downloadable pdf.
 * Repeat checks on mobile and tablet to verify they are correct.
 
-#### Admin page
-* Change screen size to verify that it is **fully responsive** and the panels work on all device sizes.
-* Check **data from MongoDB database** is correct and displays correctly.
-* Click on **edit buttons** to check they open the edit page with correct data.
-* Click on **delete buttons** to check they open the warning modal.
-* Click on **x and close** on modal to check they close the modal and go back to admin page.
-* Click on **yes, I'm sure button** on modal to check it removes correct data from MongoDB database.
-* Click on **no, keep it button** on modal to check it closes the modal and goes back to admin page leaving data in place.
-* Click on **add new skill button** to check it opens add skill page.
-* Hover over **buttons** to check they change colour.
-* In the footer click on each **social media button** to check it takes you to the relevant website in a new window.
-* In the footer click on **CV** to check it opens the downloadable pdf.
-* Repeat checks on mobile and tablet to verify they are correct.
-
-#### Edit skills page
-* Change screen size to verify that it is **fully responsive** and the panels work on all device sizes.
-* Check form is **displaying correct data** to be edited.
-* **Edit data** in form and click the save changes button to check it closes the page and returns to admin page, and that the admin page displays edited data.
-* Click on **back to skills button** to check it returns you to the admin page without changing data.
-* Hover over **buttons** to check they change colour.
-* In the footer click on each **social media button** to check it takes you to the relevant website in a new window.
-* In the footer click on **CV** to check it opens the downloadable pdf.
-* Repeat checks on mobile and tablet to verify they are correct.
-
-#### Add skills page
-* Change screen size to verify that it is **fully responsive** and the panels work on all device sizes.
-* **Enter data** in form and click the add skill button to check it closes the page and returns to admin page, and that the admin page displays added data.
-* Hover over **buttons** to check they change colour.
-* Click on **back to skills button** to check it returns you to the admin page without changing data.
-* In the footer click on each **social media button** to check it takes you to the relevant website in a new window.
-* In the footer click on **CV** to check it opens the downloadable pdf.
-* Repeat checks on mobile and tablet to verify they are correct.
-
 #### Heroku
 * Check Heroku is being **updated** and the changes are being deployed each time it is **pushed to GitHub.**
 * Open app on Heroku and test all pages, links and forms work correctly.
@@ -293,12 +241,6 @@ The planning for this project involved using my **wireframes** to sketch a plan 
 * To solve this, I created a **large modal** that pops up when the view button is clicked.
 * This was a better solution as it allowed me to create a graphic showing the home page on laptop, tablet and mobile. It gave me more room to write the description and add the link to the live website.
 * It is also better for **user experience** as it adds more interest and drama when it pops up. It also leaves the projects page cleaner and neater.
-
-#### Delete button
-* When I added the **delete** button to the admin page, it originally simply deleted any skill when clicked.
-* I felt that this was a very dangerous thing to do, as there was no going back once it was clicked.
-* My solution was to wire up a modal that pops up when the **delete button** is clicked saying **'are you sure you want to delete this skill? once you press this button it's gone for good!'** There are then two buttons. **'yes. i'm sure'** which is actually the **'real'** delete button that is wired up to remove the data. The other button **'no. keep it'** takes the user safely back to the **admin** page.
-* This solution means that the data is better protected from being deleted by accident, so makes it **more secure.**
 
 ### Bugs
 
