@@ -9,7 +9,6 @@
 
 ## Overview
 
-
 This is a website to **promote me as a full stack web developer**. In the future, I shall be able to use it to send to potential employers as a way of **advertising my skills.** It has been built using **template inheritance** which will make it easier to add content as my projects and skills grow. 
 
 The aim of the project is to produce a website using **Flask** and **Python** that allows the use of data stored in a database on **MongoDB**. The website has to demonstrate the data storage principles that you should be able to **create, read, update and delete (CRUD)** that data through a user interface. For my project, the **user** of that interface will be **me** as the website's owner. 
