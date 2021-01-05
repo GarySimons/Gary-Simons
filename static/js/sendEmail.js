@@ -1,6 +1,11 @@
+// Hide 'email-sent' messaage
+$(document).ready(function () {
+                    $('#email-sent').hide();
+                });
+
 // Send email from form
 function sendMail(contactForm) {
-    emailjs.send("GaryEmail", "gary_email", {
+    emailjs.send("gary_email", "gary", {
         "from_name": contactForm.name.value,
         "from_email": contactForm.emailaddress.value,
         "message": contactForm.message.value,
@@ -12,6 +17,11 @@ function sendMail(contactForm) {
                 contactForm.name.value = ""
                 contactForm.emailaddress.value = ""
                 contactForm.message.value = ""
+
+                // show message when form sent
+                $(document).ready(function () {
+                    $('#email-sent').show();
+                });
 
             },
             function (error) {
