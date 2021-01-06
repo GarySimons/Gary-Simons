@@ -372,6 +372,15 @@ body {
     font-weight: 300;
 }
 
+#phonetext {
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 0.1rem; 
+    font-weight: 300;
+    text-align: center;
+    margin-top: 1rem;
+}
+
 #btnsend {
     height: 1.3rem;
     width: 4rem;
